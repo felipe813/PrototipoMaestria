@@ -10,8 +10,8 @@ using System.IO;
 public class ServicioREST
 {
 
-    public static string direccionServicio = "http://127.0.0.1:5000";
-    //public static string direccionServicio = "http://felipe813.pythonanywhere.com";
+    //public static string direccionServicio = "http://127.0.0.1:5000";
+    public static string direccionServicio = "http://felipe813.pythonanywhere.com";
     /// <summary>
     /// Clase para ejecutar una operación REST donde se necesite enviar información en formato JSON
     /// </summary>
