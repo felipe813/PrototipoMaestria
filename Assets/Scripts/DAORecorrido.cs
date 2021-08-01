@@ -12,8 +12,8 @@ public class DAORecorrido
     /// <returns></returns>
     public bool CrearNuevoRecorrido()
     {
-        
-        string respuesta = ServicioREST.EjecutarOperacion(ServicioREST.direccionServicio + "/api/imagenesRandom/" + cantidadImagenes, "GET");
+        string nivelViolencia = "1";
+        string respuesta = ServicioREST.EjecutarOperacion(ServicioREST.direccionServicio + "/api/imagenesRandom/" + cantidadImagenes+"/"+nivelViolencia, "GET");
         if (respuesta == null)
         {
             Debug.Log("!!!Error creando el recorrido");

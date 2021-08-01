@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,8 +14,8 @@ public class AccionCrearRecorrido : IComando
 {
     private string _prefijoComponenteImagen ="ImagenRecorrido_";
     private string _prefijoComponenteImagenFinal ="ImagenRecorrido";
-    //private string _ftp = "ftp://b15_29177913:repositorio@ftp.byethost15.com/htdocs/Imagenes/";
-    private string _ftp = "ftp://RepositorioImagenes:repositorio@files.000webhost.com/ImagenesPrueba/";
+    private string _ftp = "ftp://b15_29177913:repositorio@ftp.byethost15.com/htdocs/Imagenes/";
+    //private string _ftp = "ftp://RepositorioImagenes:repositorio@files.000webhost.com/ImagenesPrueba/";
     private string _nombreAccion = "CrearRecorrido";
     private int _tamanoStandarImagen = 1000;
     private List<String> _mensajesProgreso;
