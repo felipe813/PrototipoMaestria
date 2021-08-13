@@ -258,7 +258,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11898}
     - Class: 114
-      Script: {instanceID: 16350}
+      Script: {instanceID: 15246}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1528,4 +1528,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/EscenaRegistro.unity
   - Assets/Scenes/EscenaRecorrido.unity
   - Assets/Scenes/EscenaPrueba.unity
-  playerPath: D:/Datos/UD/Maestria UD/Tesis/Desarrollo/PrototipoUnity/APKs/prototipo1_18_07_2021.apk
+  playerPath: D:/Datos/UD/Maestria UD/Tesis/Desarrollo/PrototipoUnity/APKs/prototipo1_13_08_2021.apk

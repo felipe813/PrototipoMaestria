@@ -29,14 +29,14 @@ public class AccionCrearRecorrido : IComando
         if(Usuario.registroNuevo){
             this._mensajesProgreso.Add("Registro exitoso, empezara un recorrido nuevo.");
             this._mensajesProgreso.Add("Registro exitoso, empezara un recorrido nuevo.");
-            this._mensajesProgreso.Add("Registro exitoso, empezara un recorrido nuevo.");
             this._mensajesProgreso.Add("Verá imágenes del posconflicto Colombiano");
             this._mensajesProgreso.Add("Verá imágenes del posconflicto Colombiano");
-            this._mensajesProgreso.Add("Puede ver las imágenes las veces que desee");
             this._mensajesProgreso.Add("Puede ver las imágenes las veces que desee");
             this._mensajesProgreso.Add("Use los botones laterales para cambiar las imágenes");
-            this._mensajesProgreso.Add("No olvide calificar las imágenes.");
-            this._mensajesProgreso.Add("No olvide calificar las imágenes.");
+            this._mensajesProgreso.Add("Use los botones laterales para cambiar las imágenes");
+            this._mensajesProgreso.Add("Puede calificar que tan violenta le pareció la imágen. ");
+            this._mensajesProgreso.Add("Puede calificar que tan violenta le pareció la imágen. ");
+            this._mensajesProgreso.Add("Puede calificar que tan violenta le pareció la imágen. ");
 
         }else{
             this._mensajesProgreso.Add("Verá imágenes del posconflicto Colombiano");
@@ -46,9 +46,9 @@ public class AccionCrearRecorrido : IComando
             this._mensajesProgreso.Add("Puede ver las imágenes las veces que desee");
             this._mensajesProgreso.Add("Use los botones laterales para cambiar las imágenes");
             this._mensajesProgreso.Add("Use los botones laterales para cambiar las imágenes");
-            this._mensajesProgreso.Add("No olvide calificar las imágenes.");
-            this._mensajesProgreso.Add("No olvide calificar las imágenes.");
-            this._mensajesProgreso.Add("No olvide calificar las imágenes.");
+            this._mensajesProgreso.Add("Puede calificar que tan violenta le pareció la imágen. ");
+            this._mensajesProgreso.Add("Puede calificar que tan violenta le pareció la imágen. ");
+            this._mensajesProgreso.Add("Puede calificar que tan violenta le pareció la imágen. ");
         }
 
         this._ftp = GetFTP();

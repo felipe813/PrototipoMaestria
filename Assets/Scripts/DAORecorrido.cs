@@ -12,9 +12,17 @@ public class DAORecorrido
     /// <returns></returns>
     public bool CrearNuevoRecorrido()
     {
-        string nivelViolencia = "1";
-        string respuesta = ServicioREST.EjecutarOperacion(ServicioREST.direccionServicio + "/api/imagenesRandom/" + cantidadImagenes+"/"+nivelViolencia, "GET");
-        if (respuesta == null)
+        
+        string respuesta = string.Empty;
+        //Se debe obtener el nivel de violencia de preferencia para el usuarioy de acuerdo a este se le muestran las imágenes.
+        //string nivelViolencia = "1";
+        string nivelViolencia = string.Empty;
+        //Si no se tiene un nivel de violencia de preferencia, se le muestran imágenes de cualquier nivel.
+        if(!string.IsNullOrEmpty(nivelViolencia))
+            respuesta = ServicioREST.EjecutarOperacion(ServicioREST.direccionServicio + "/api/imagenesRandom/" + cantidadImagenes+"/"+nivelViolencia, "GET");
+        else
+            respuesta = ServicioREST.EjecutarOperacion(ServicioREST.direccionServicio + "/api/imagenesRandom/" + cantidadImagenes, "GET");
+        if (string.IsNullOrEmpty(respuesta))
         {
             Debug.Log("!!!Error creando el recorrido");
             return false;
